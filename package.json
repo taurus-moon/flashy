@@ -1,13 +1,15 @@
 {
-  "name": "flash-wise",
+  "name": "flashy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
+  
   "dependencies": {
     "@clerk/nextjs": "^5.3.1",
     "@radix-ui/react-dialog": "^1.1.1",
@@ -16,7 +18,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.428.0",
-    "next": "14.2.5",
+    "next": "^14.2.5",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.5.2",
