@@ -147,7 +147,7 @@ export function LandingPage() {
         <section className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid gap-6 lg:grid-cols-3 mx-auto">
             <div className="flex flex-col items-center text-center space-y-2">
-              <CloudLightningIcon className="h-12 w-12 text-primary" />
+              <CloudLightningIcon className="h-12 w-12 text-black" />
               <h3 className="text-xl font-semibold">Automatic Flashcard Generation</h3>
               <p className="text-muted-foreground">
                 Our AI-powered technology automatically generates flashcards from your slides or documents, saving you
@@ -155,14 +155,14 @@ export function LandingPage() {
               </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-2">
-              <RepeatIcon className="h-12 w-12 text-primary" />
+              <RepeatIcon className="h-12 w-12 text-black" />
               <h3 className="text-xl font-semibold">Two-Sided Review</h3>
               <p className="text-muted-foreground">
                 Flashcards are designed for both front-to-back and back-to-front review, reinforcing your understanding.
               </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-2">
-              <FolderIcon className="h-12 w-12 text-primary" />
+              <FolderIcon className="h-12 w-12 text-black" />
               <h3 className="text-xl font-semibold">Personalized Collections</h3>
               <p className="text-muted-foreground">
                 Organize your flashcards into personalized collections, making it easy to focus on specific topics or
@@ -177,7 +177,7 @@ export function LandingPage() {
               <h2 className="mb-10 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How AI Flashcards Works</h2>
               <div className="grid gap-4">
                 <div className="flex items-start gap-4 mb-5">
-                  <div className="bg-primary rounded-full p-2 flex items-center justify-center">
+                  <div className="bg-black rounded-full p-2 flex items-center justify-center">
                     <UploadIcon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
@@ -188,7 +188,7 @@ export function LandingPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4 mb-5">
-                  <div className="bg-primary rounded-full p-2 flex items-center justify-center">
+                  <div className="bg-black rounded-full p-2 flex items-center justify-center">
                     <BoltIcon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
@@ -200,7 +200,7 @@ export function LandingPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4 mb-5">
-                  <div className="bg-primary rounded-full p-2 flex items-center justify-center">
+                  <div className="bg-black rounded-full p-2 flex items-center justify-center">
                     <BookmarkIcon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
@@ -228,7 +228,7 @@ export function LandingPage() {
         <h2 className="mb-10 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">Pricing</h2>
           <div className="container px-4 md:px-6 grid gap-6 lg:grid-cols-3 lg:gap-12 mx-auto">
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="bg-primary rounded-md p-3 flex items-center justify-center">
+              <div className="bg-black rounded-md p-3 flex items-center justify-center">
                 <BoltIcon className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="text-2xl font-bold">Free</h3>
@@ -241,14 +241,14 @@ export function LandingPage() {
               </div>
               <Link
                 href="#"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-black px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-black/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 Sign Up
               </Link>
             </div>
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="bg-primary rounded-md p-3 flex items-center justify-center">
+              <div className="bg-black rounded-md p-3 flex items-center justify-center">
                 <RepeatIcon className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="text-2xl font-bold">Standard</h3>
@@ -261,14 +261,14 @@ export function LandingPage() {
               </div>
               <Link
                 href="#"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-black px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-black/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 Sign Up
               </Link>
             </div>
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="bg-primary rounded-md p-3 flex items-center justify-center">
+              <div className="bg-black rounded-md p-3 flex items-center justify-center">
                 <FolderIcon className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="text-2xl font-bold">Premium</h3>
@@ -281,7 +281,7 @@ export function LandingPage() {
               </div>
               <Link
                 href="#"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-black px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-black/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 Sign Up
@@ -289,7 +289,7 @@ export function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="bg-primary py-12 md:py-24 lg:py-32">
+        <section className="bg-black py-12 md:py-24 lg:py-32">
           <div
             className="container px-4 md:px-6 flex flex-col items-center text-center space-y-4 mx-auto">
             <h2
