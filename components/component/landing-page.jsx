@@ -1,8 +1,11 @@
-
+"use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card"
+import { useRouter } from 'next/navigation';
+ 
+
 import {
     ClerkProvider,
     SignInButton,
@@ -13,7 +16,16 @@ import {
     UserButton
   } from '@clerk/nextjs'
 
+
+
 export function LandingPage() {
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('https://flashy-mu.vercel.app/generate');
+  };
+
   return (
     (<div className="flex flex-col min-h-[100dvh]">
       <ClerkProvider>
@@ -22,7 +34,8 @@ export function LandingPage() {
           <CloudLightningIcon className="h-6 w-6 text-primary-foreground" />
           <span className="text-primary-foreground font-bold text-lg ml-2">Flashy</span>
         </Link>
-        <nav className="hidden lg:flex gap-4 sm:gap-6">
+
+        {/* <nav className="hidden lg:flex gap-4 sm:gap-6">
           <Link
             href="#"
             className="text-sm font-medium text-primary-foreground hover:underline underline-offset-4"
@@ -47,8 +60,10 @@ export function LandingPage() {
             prefetch={false}>
             Contact
           </Link>
-        </nav>
-        <div className="hidden lg:flex items-center gap-4">
+        </nav> */}
+
+        
+        {/* <div className="hidden lg:flex items-center gap-4">
           <SignedOut>
             <SignInButton mode="modal">
               <Button variant="outline" className="w-full min-[400px]:w-auto">
@@ -64,7 +79,8 @@ export function LandingPage() {
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
           </SignedIn>
-        </div>
+        </div> */}
+
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="lg:hidden">
@@ -128,9 +144,13 @@ export function LandingPage() {
                 documents, making studying and review a breeze.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button variant="outline" className="w-full min-[400px]:w-auto">
-                  Get Started
-                </Button>
+              <Button 
+                variant="outline" 
+                className="w-full min-[400px]:w-auto"
+                onClick={handleClick}
+              >
+                Get Started
+              </Button>
               </div>
             </div>
             <div className="flex justify-center">
@@ -251,12 +271,12 @@ export function LandingPage() {
               <div className="bg-black rounded-md p-3 flex items-center justify-center">
                 <RepeatIcon className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-bold">Standard</h3>
+              <h3 className="text-2xl font-bold">Free</h3>
               <p className="text-muted-foreground">
                 Our standard plan includes advanced features like custom collections and detailed analytics.
               </p>
               <div className="flex flex-col gap-2">
-                <span className="text-4xl font-bold">$9</span>
+                <span className="text-4xl font-bold">$0</span>
                 <span className="text-sm text-muted-foreground">per month</span>
               </div>
               <Link
@@ -271,12 +291,12 @@ export function LandingPage() {
               <div className="bg-black rounded-md p-3 flex items-center justify-center">
                 <FolderIcon className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-bold">Premium</h3>
+              <h3 className="text-2xl font-bold">Free</h3>
               <p className="text-muted-foreground">
                 Our premium plan unlocks unlimited flashcard generation, team collaboration, and priority support.
               </p>
               <div className="flex flex-col gap-2">
-                <span className="text-4xl font-bold">$19</span>
+                <span className="text-4xl font-bold">$0</span>
                 <span className="text-sm text-muted-foreground">per month</span>
               </div>
               <Link
@@ -300,13 +320,17 @@ export function LandingPage() {
               Sign up for a free trial and experience the power of AI-generated flashcards for your studying and
               presentation needs.
             </p>
-            <Button variant="outline" className="hidden lg:inline-flex w-full min-[400px]:w-auto">
+            <Button 
+            variant="outline" 
+            className="hidden lg:inline-flex w-full min-[400px]:w-auto"
+            onClick={handleClick}
+            >
                 Start Free Trial
             </Button>
           </div>
         </section>
       </main>
-      <footer className="bg-muted p-6 md:py-12 w-full mx-auto">
+      {/* <footer className="bg-muted p-6 md:py-12 w-full mx-auto">
         <div
           className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
@@ -337,7 +361,7 @@ export function LandingPage() {
             <h3 className="font-semibold">Support</h3>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>)
   );
 }
