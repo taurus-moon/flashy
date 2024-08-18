@@ -28,7 +28,7 @@ export function LandingPage() {
 
   return (
     (<div className="flex flex-col min-h-[100dvh]">
-      <ClerkProvider>
+  
       <header className="bg-black px-4 lg:px-6 h-14 flex items-center justify-between">
         <Link href="#" className="flex items-center" prefetch={false}>
           <CloudLightningIcon className="h-6 w-6 text-primary-foreground" />
@@ -130,7 +130,7 @@ export function LandingPage() {
           </SheetContent>
         </Sheet>
       </header>
-    </ClerkProvider>
+
       <main className="flex-1">
         <section className="bg-black py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid gap-6 lg:grid-cols-2 lg:gap-12 mx-auto">
